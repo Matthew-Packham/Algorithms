@@ -1,5 +1,7 @@
 def binary_search(L,x):
     """Binary search algorithm to find target x in list L
+       cost: O(log_2(N)) since if we double the number of elem in the list, the number of iterations needed only increases by one 
+       (as halfing the list is one iter). 
     """ 
     
     #Set initial start and end indices for full list
