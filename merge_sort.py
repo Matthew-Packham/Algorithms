@@ -2,6 +2,11 @@
 import merge_module
 
 def msort(A):
+    """ Implementation of merge sort algorithm which takes an unsorted list A and applies recussion to split the list untill 
+    we have nn lists of length 1. Then merges (through merge algorithm) these lists pairwise back up the stack list, untill 
+    we are left with single sorted list of nn elements.
+    """
+    
     nn = len(A)
     if nn==1:
         return A
