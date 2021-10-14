@@ -17,7 +17,7 @@ def binary_search(L,x):
             #cut off left half of list
             istart = imid+1
         #we keep spliting and cutting untill we land on element we are looking for.
-        #we keep tract of element index through imid
+        #we keep track of element index through imid
     return -1
 
 
