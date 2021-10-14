@@ -7,43 +7,39 @@ def merge(L,R):
     M = []
 
     #indices 
-
     iL = 0
     iR = 0
 
-    # n is the len of each sub list. we therfore iterate 2n times
+    # n is the len of each sub list. We therfore iterate 2n times.
     for i in range(2*n):
-    #FOR L
-        #compare iL and iR elements of L and R
+    
+        #compare iL and iR elements of L and R.
+        #place the smaller elm in M and increment iL or iR resp.
+    
+    #FOR L    
         if L[iL]<R[iR]:
-            #place the smaller elm in M and increment iL or iR resp
             M.append(L[iL])
             iL = iL + 1
-
-
-            #check if we have reached end of list, whose index was incremented 
+            
+            #check if we have reached end of list L.
             if iL==n:
+                # add all remaining elements of R to M
                 M.extend(R[iR:])
                 break
-
-            # if true, increment remaining preportion
+            
     #For R
         else:
-            #place the smaller elm in M and increment iL or iR resp
             M.append(R[iR])
             iR = iR + 1
 
-
-            #check if we have reached end of list, whose index was incremented 
-            if iR ==n:
+            #check if we have reached end of list R
+            if iR==n:
+                # add all remaining elements of L to M
                 M.extend(L[iL:])
                 break
-
-            # if true, increment remaining preportion
     return M
 
-    
-
+#example
 if __name__ == "__main__":
     L = [2, 6, 24, 56]
     R = [8, 23, 31, 54]
