@@ -8,7 +8,7 @@ def msort(A):
     else: # split list and call msort in a recursive fashion on left and right lists
         split = int(nn/2)
         L = msort(A[:split]) # by calling msort again we keep split the list untill we get len one!
-        R = msort(A[split:])
+        R = msort(A[split:]) # then we merge our way back up the list - through power of recursion
         M = merge_module.merge(L, R)
         return M
 
