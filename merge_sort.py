@@ -1,3 +1,4 @@
+#import merge_module to utilise merge algorithm
 import merge_module
 
 def msort(A):
