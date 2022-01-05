@@ -1,11 +1,11 @@
 # Algorithms
 Variety of custom algorithms to practice creating, optimizing and to build understanding.
 
-# Fun Algorithms
+## Fun Algorithms
 
 * Tennis Simulator - simulates a random game of tennis given the intial probabilties of each player winning! Includes changing servers and accounts for randomness.
 
-# Sorting and Searching Algorithms
+## Sorting and Searching Algorithms
 
 * Binary Search
 * Iterative Search
